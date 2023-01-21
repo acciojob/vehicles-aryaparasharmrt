@@ -6,7 +6,7 @@ public class Car extends Vehicle {
     private int doors;
     private int gears;
     private boolean isManual;
-    private int currentGear = 1;
+    private int currentGear;
     private int seats;
 
     /*  assert car.getName() == "Tata";
@@ -31,6 +31,7 @@ public class Car extends Vehicle {
         this.gears = gears;
         this.isManual = isManual;
         this.seats = seats;
+        this.currentGear = 1;
     }
 
     public int getWheels(){
@@ -62,7 +63,7 @@ public class Car extends Vehicle {
     }
 
     public void changeGear(int newGear){
-        currentGear = newGear;
+        this.currentGear = newGear;
         System.out.println("changeGear method called - The gear is changed to: " + currentGear);
     }
 
