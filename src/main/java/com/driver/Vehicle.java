@@ -39,5 +39,4 @@ public class Vehicle {
         this.currentSpeed = 0;
         System.out.println("stop method called - The vehicle is stopped");
     }
-
 }
